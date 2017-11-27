@@ -1,0 +1,8 @@
+[fetch]
+	prune = true
+
+[alias]
+	nuke = reset --hard
+	build = !msbuild.exe //t:Clean && nuget restore && msbuild.exe //t:Rebuild
+	blitz = checkout -- .
+	
